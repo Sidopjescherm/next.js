@@ -1,11 +1,11 @@
-import React from 'react';
-
-export default function RootLayout({
-  children,
-}) {
-  return React.createElement(
-    'html',
-    { lang: 'en' },
-    React.createElement('body', null, children)
-  );
+export default function DashboardLayout({ children }) {
+  return (
+    <html lang="en">
+      <body>
+        {/* Layout UI */}
+        {/* Place children where you want to render a page or nested layout */}
+        <main>{children}</main>
+      </body>
+    </html>
+  )
 }
